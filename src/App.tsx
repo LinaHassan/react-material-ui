@@ -1,26 +1,68 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Page from "./view/Page";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      
+        <Page />
+    
     </div>
   );
 }
 
 export default App;
+
+
+
+
+// import "./App.css";
+// import Page from "./view/Page";
+// import { createTheme, ThemeProvider, PaletteOptions } from "@mui/material";
+// interface CustomPaletteOptions extends PaletteOptions {
+//   palette: {
+//     primary: {
+//       main: string;
+//       dark: string;
+//     };
+//     secondary: {
+//       main: string;
+//     };
+//     neutral: {
+//       Gray: string;
+//       GrayishViolet: string;
+//       DarkBlue: string;
+//       DarkViolet: string;
+//     };
+//   };
+// }
+// const customPalette: CustomPaletteOptions = {
+//   palette: {
+//     primary: {
+//       main: "#2acfcf",
+//       dark: "#2c1075",
+//     },
+//     secondary: {
+//       main: "#f68383",
+//     },
+//     neutral: {
+//       Gray: "#bfbfbf",
+//       GrayishViolet: "9e9aa7",
+//       DarkBlue: "#35323e",
+//       DarkViolet: "#232127",
+//     },
+//   },
+// };
+
+// const theme = createTheme(customPalette);
+// function App() {
+//   return (
+//     <div>
+//       <ThemeProvider theme={theme}>
+//         <Page />
+//       </ThemeProvider>
+//     </div>
+//   );
+// }
+
+// export default App;
