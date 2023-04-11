@@ -34,7 +34,7 @@ const DrawerComp = () => {
             backgroundColor: "primary.dark",
             flexGrow: 1,
             padding: "1rem",
-            textAlign: "center" ,
+            textAlign: "center",
             color: "white",
             margin: "5rem 2rem",
             borderRadius: "1rem",
@@ -42,24 +42,22 @@ const DrawerComp = () => {
           }}
         >
           <ListItem button>
-            <ListItemText primary="Features"  sx={{ textAlign: "center" }}/>
+            <ListItemText primary="Features" sx={{ textAlign: "center" }} />
           </ListItem>
-  
+
           <ListItem button>
             <ListItemText primary="Pricing" sx={{ textAlign: "center" }} />
           </ListItem>
-          <ListItem button >
+          <ListItem button>
             <ListItemText primary="Resources" sx={{ textAlign: "center" }} />
           </ListItem>
           <Divider
-          sx={{
-            borderColor: "info.light",
-            width: "25rem",
-            textAlign: "center",
-  
-
-          }}
-        />
+            sx={{
+              borderColor: "info.light",
+              width: "25rem",
+              textAlign: "center",
+            }}
+          />
           <ListItem button>
             <ListItemText primary="Login" sx={{ textAlign: "center" }} />
           </ListItem>
@@ -75,7 +73,10 @@ const DrawerComp = () => {
               margin: "1rem 0",
             }}
           >
-            <ListItemText primary="Sign Up " sx={{ textAlign: "center" , padding:"0 2rem "}} />
+            <ListItemText
+              primary="Sign Up "
+              sx={{ textAlign: "center", padding: "0 2rem " }}
+            />
           </ListItem>
         </List>
       </Drawer>

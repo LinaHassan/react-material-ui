@@ -81,18 +81,6 @@ const ContectComponent = () => {
               </Stack>
             </Box>
           </Grid>
-
-          {/* <Grid xs={6} md={6} lg={2} sx={{ textAlign: 'center' }} >
-
-              <Stack direction="row" sx={{ textAlign: 'center' }}  spacing={2} >
-
-              <img src={facebook}  />
-              <img src={twitter} />
-              <img src={pinterest} />
-              <img src={instagram} />
-              </Stack>
-            
-            </Grid> */}
           <Grid xs={12} lg={3}>
             <Box
               sx={{

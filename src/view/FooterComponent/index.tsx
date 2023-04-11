@@ -6,8 +6,7 @@ import ContectComponent from "./ContectComponent";
 const FooterComponent = () => {
   return (
     <>
-      <Stack  
->
+      <Stack>
         <Stack
           direction="column"
           justifyContent="center"
@@ -15,7 +14,7 @@ const FooterComponent = () => {
           padding="2.5rem"
           sx={{
             backgroundColor: "primary.dark",
-            backgroundImage:  `url(${desktopbackgroundImage})`,
+            backgroundImage: `url(${desktopbackgroundImage})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             "@media (max-width: 600px)": {

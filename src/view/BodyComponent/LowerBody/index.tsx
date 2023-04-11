@@ -1,7 +1,17 @@
-import { Stack, Link, Typography, Button, Stepper } from "@mui/material";
+import {
+  Stack,
+  Link,
+  Typography,
+  Button,
+  TextField,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import TimelineComponent from "./TimelineComponent";
+import background from "../../../images/bg-shorten-desktop.svg";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -12,6 +22,8 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 const SecondSection = () => {
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <>
       <Stack
@@ -21,6 +33,41 @@ const SecondSection = () => {
         spacing={2}
         sx={{ backgroundColor: "info.light", padding: "5rem " }}
       >
+        <Paper
+          sx={{
+            padding: "2rem ",
+            backgroundColor: "primary.dark",
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            width: "69vw",
+            position: "relative",
+            top: isMatch ? "0" : "-9rem",
+          }}
+        >
+          <TextField
+            variant="outlined"
+            placeholder="Shorten a link here ..."
+            size="small"
+            sx={{
+              borderRadius: "0.5rem",
+              backgroundColor: "white",
+              width: "70%",
+            }}
+          />
+          <Button
+            variant="contained"
+            sx={{
+              borderRadius: "0.5rem",
+              color: "white",
+              padding: "1rem 0.75rem ",
+              margin: "0rem 2rem",
+            }}
+          >
+            Shorten it!
+          </Button>
+        </Paper>
+
         <Item>
           <Stack
             alignItems="flex-start"

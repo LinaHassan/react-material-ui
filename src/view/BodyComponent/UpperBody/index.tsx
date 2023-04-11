@@ -8,6 +8,7 @@ const Section = () => {
       direction={{ xs: "column-reverse", sm: "row" }}
       justifyContent="space-between"
       alignItems="center"
+      marginBottom="5rem"
     >
       <Stack
         spacing={3}
