@@ -40,32 +40,38 @@ const SecondSection = () => {
             backgroundImage: `url(${background})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            width: "69vw",
+            width: "65vw",
             position: "relative",
             top: isMatch ? "0" : "-9rem",
           }}
         >
-          <TextField
-            variant="outlined"
-            placeholder="Shorten a link here ..."
-            size="small"
-            sx={{
-              borderRadius: "0.5rem",
-              backgroundColor: "white",
-              width: "70%",
-            }}
-          />
-          <Button
-            variant="contained"
-            sx={{
-              borderRadius: "0.5rem",
-              color: "white",
-              padding: "1rem 0.75rem ",
-              margin: "0rem 2rem",
-            }}
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            justifyContent="space-evenly"
+            alignItems="center"
+            spacing={2}
           >
-            Shorten it!
-          </Button>
+            <TextField
+              variant="outlined"
+              placeholder="Shorten a link here ..."
+              size="small"
+              sx={{
+                borderRadius: "0.5rem",
+                backgroundColor: "white",
+                width: "70%",
+              }}
+            />
+            <Button
+              variant="contained"
+              sx={{
+                borderRadius: "0.5rem",
+                color: "white",
+                padding: "1rem 0.75rem ",
+              }}
+            >
+              Shorten it!
+            </Button>
+          </Stack>
         </Paper>
 
         <Item>
